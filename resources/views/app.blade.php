@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="app">
-
+    <header-component></header-component>
 </div>
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}" defer></script>
