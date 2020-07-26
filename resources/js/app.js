@@ -3,6 +3,7 @@ import HeaderComponent from "./components/HeaderComponent";
 import TaskListComponent from "./components/TaskListComponent";
 import TaskCreateComponent from "./components/TaskCreateComponent";
 import TaskShowComponent from "./components/TaskShowComponent";
+import TaskEditComponent from "./components/TaskEditComponent";
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -33,6 +34,12 @@ const router = new VueRouter({
             path: '/tasks/create',
             name: 'task.create',
             component: TaskCreateComponent
+        },
+        {
+            path: '/tasks/:taskId/edit',
+            name: 'task.edit',
+            component: TaskEditComponent,
+            props: true
         },
     ]
 });
